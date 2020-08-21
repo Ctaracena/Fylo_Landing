@@ -1,6 +1,97 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+  --heading-font: 'Open Sans', sans-serif;
+  --body-font: "Raleway", sans-serif;
+}
 
 * {
   margin: 0;
-  font-family: "Raleway", sans-serif;
+}
+
+body {
+  /* border: 2px solid black; */
+  width: 375px;
+  margin: auto;
+  font-family: var(--body-font);
+}
+
+h2, li {
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+.navbar {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4px;
+}
+.navbar img {
+  width: 22%;
+}
+.navbar ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.navbar ul li {
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.block1 {
+  width: 94%;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 70px auto;
+}
+.description {
+  text-align: center;
+  padding: 28px 8px;
+}
+h2, p {
+  padding: 10px 0;
+}
+p {
+  line-height: 1.4;
+}
+.form {
+  margin: 10px auto;
+  width: 94%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.email {
+  height: 30px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  font-weight: normal;
+  padding-left: 12px;
+  font-size: 12px;
+  outline: none;
+}
+::placeholder {
+  color: hsl(0, 0%, 75%);
+  font-size: 11px;
+}
+.button {
+  height: 30px;
+  margin: 6px 0;
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 2px;
+  font-size: 12px;
+}
+.image-container {
+  width: 80%;
+  margin: auto;
+}
+.image-container img {
+  width: 100%;
 }
