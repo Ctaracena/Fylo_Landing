@@ -22,13 +22,13 @@ h2, li {
   font-weight: 700;
 }
 .navbar {
-  height: 50px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 4px;
 }
-.navbar img {
+.logo {
   width: 22%;
 }
 .navbar ul {
@@ -41,8 +41,12 @@ h2, li {
   cursor: pointer;
   font-weight: 400;
   color: hsl(243, 87%, 12%);
+  font-size: 14px;
 }
-
+.navbar ul li:hover {
+  color: hsl(238, 22%, 44%);
+  transform: scale(1.1);
+}
 .block1 {
   width: 94%;
   display: flex;
@@ -56,6 +60,7 @@ h2, li {
 h2 {
   padding: 10px 0;
   color: hsl(243, 87%, 12%);
+  font-weight: 700;
 }
 p {
   padding: 10px 0;
@@ -91,6 +96,9 @@ p {
   font-weight: bold;
   border-radius: 2px;
   font-size: 12px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 8px 0 hsla(239, 22%, 44%, 0.3);
 }
 .image-container {
   width: 80%;
@@ -211,4 +219,61 @@ p {
   margin: 10px auto;
   width: 65%;
   height: 100px;
+}
+
+footer {
+  width: 350px;
+  margin: auto;
+  background-color: hsl(243, 87%, 12%);
+  padding-bottom: 20px;
+}
+.contact {
+  padding: 60px 35px 50px;
+}
+.logo-footer-container {
+  margin-bottom: 30px;
+}
+.phone-container,
+.email-container {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-top: 20px;
+  font-family: var(--heading-font);
+}
+.phone-icon,
+.email-icon {
+  width: 20px;
+  height: 18px;
+  margin-right: 20px;
+}
+
+.about ul li, 
+.contact-us ul li {
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+.contact-us {
+  margin-top: 30px;
+}
+.about ul li a,
+.contact-us ul li a {
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 14px;
+}
+.about ul li:hover,
+.contact-us ul li:hover {
+  text-decoration: underline;
+}
+.social {
+  width: 35%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.social svg:hover {
+  transform: scale(1.2);
 }
