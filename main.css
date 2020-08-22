@@ -385,4 +385,27 @@ footer {
     margin-left: 100px;
   }
 
+  footer {
+    width: 100%;
+    display: flex;
+    padding-bottom: 30px;
+  }
+  .contact {
+    padding: 50px 85px 100px 40px;
+  }
+  .phone-container,
+  .email-container {
+  margin-top: 12px;
+}
+.about,
+.contact-us {
+  width: 20%;
+  margin-top: 125px;
+}
+.social {
+  width: 12%;
+  margin-right: 110px;
+  margin-top: 140px;
+}
+
 }
