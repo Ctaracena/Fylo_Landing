@@ -29,7 +29,7 @@ h2, li {
   padding: 0 4px;
 }
 .logo {
-  width: 22%;
+  width: 100px;
 }
 .navbar ul {
   width: 50%;
@@ -276,4 +276,113 @@ footer {
 }
 .social svg:hover {
   transform: scale(1.2);
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    width: 1000px;
+    margin: auto;
+  }
+  .navbar ul {
+    width: 25%;
+  }
+  .block1 {
+    width: 100%;
+    flex-direction: row;
+  }
+  .description {
+    text-align: start;
+    width: 92%;
+  }
+  h2 {
+    font-size: 34px;
+  }
+  .form {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+  }
+  .email {
+    width: 50%;
+  }
+  .button {
+    width: 35%;
+    margin-left: 10px;
+    box-sizing: border-box;
+  }
+
+  .block2 {
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 60px;
+  }
+  .background {
+    background-image: url(images/bg-curve-desktop.svg);
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+  }
+  .block2 .description {
+    width: 90%;
+  }
+  .block2 .description-title {
+    font-size: 28px;
+    letter-spacing: 1.2px;
+  }
+  .block2 .description p {
+    line-height: 1.6;
+    padding: 5px 0;
+    width: 88%;
+  }
+  .description-container {
+    padding-left: 35px;
+  }
+  .block2 .image-container {
+    width: 50%;
+    padding-right: 35px;
+  }
+  .link-container {
+    margin: 5px 0;
+  }
+  .box {
+    width: 50%;
+    margin: 0;
+  }
+  .box .user-experience {
+    padding: 8px 18px 0;
+  }
+  .box .user-experience p {
+    line-height: 1.5;
+  }
+  .user-details img {
+    margin-left: 20px;
+  }
+
+  .access-container {
+    width: 100%;
+    display: flex;
+    padding: 50px 0;
+  }
+  .access-details {
+    width: 65%;
+  }
+  .access-details h3 {
+    font-size: 26px;
+    text-align: start;
+  }
+  .access-details p {
+    text-align: start;
+  }
+  .email.desktop {
+    width: 68%;
+    margin-left: 100px;
+  }
+  .button.desktop {
+    width: 30%;
+    margin-left: 100px;
+  }
+
 }
